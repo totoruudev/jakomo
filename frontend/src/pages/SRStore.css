@@ -1,0 +1,28 @@
+.srstore-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 48px 16px 64px 16px;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.srstore-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.srstore-card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.srstore-card {
+    border-radius: 1.1rem;
+    box-shadow: 0 4px 20px rgba(60, 60, 90, 0.08);
+    border: none;
+    transition: box-shadow 0.2s;
+}
+
+.srstore-card:hover {
+    box-shadow: 0 12px 32px rgba(80, 80, 120, 0.12);
+}

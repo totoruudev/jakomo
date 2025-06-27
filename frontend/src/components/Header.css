@@ -1,0 +1,252 @@
+/* === 공통 === */
+ul, li, ol {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+.header-container { position: relative; }
+
+.logo { height: 32px; }
+.logo-dark { display: none; }
+.logo-light { display: inline; }
+.dark .logo-dark { display: inline; }
+.dark .logo-light { display: none; }
+
+/* === 검색창 === */
+.search-box {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+.search-inner {
+  border-bottom: 1px solid #000;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  background: none;
+}
+.search-inner input {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+.search-inner input:focus {
+  outline: none;
+  background: #fff;
+}
+.search-icon { font-size: 1rem; color: #333; }
+
+/* === 네비게이션 (PC) === */
+.main-nav {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-nav .nav-item {
+  position: relative;
+  display: inline-block;
+}
+.main-nav .nav-link {
+  cursor: pointer;
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 1rem;
+  background: none;
+  text-decoration: none;
+  transition: color 0.15s;
+  position: relative;
+  font-weight: 600;
+}
+.menu-icon-img {
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.main-nav .nav-underline {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: #222;
+  border-radius: 1.5px;
+  transform: translateX(-50%);
+  transition: width 0.28s cubic-bezier(0.4,0,0.2,1);
+  pointer-events: none;
+}
+.main-nav .nav-item:hover .nav-link .nav-underline,
+.main-nav .nav-item:focus .nav-link .nav-underline,
+.main-nav .nav-link.active .nav-underline {
+  width: 70px;
+}
+.main-nav .nav-item:hover .nav-link,
+.main-nav .nav-item:focus .nav-link {
+  color: #1a5f5a;
+}
+.main-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 180px;
+  z-index: 99;
+  padding: 12px 0;
+  animation: fadeIn 0.2s;
+  border: none;
+}
+.main-nav .nav-item.show .dropdown-menu { display: block; }
+.main-nav .dropdown-item {
+  padding: 12px 20px;
+
+  font-size: 1rem;
+  color: #222;
+  border: none;
+  background: none;
+  transition: background 0.15s;
+  text-decoration: none;
+  display: block;
+}
+.main-nav .dropdown-item:hover {
+  background: #f6f8fa;
+  color: #1a5f5a;
+}
+
+/* === 뱃지 === */
+.badge {
+  font-size: 0.65rem;
+  padding: 0.25em 0.45em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+
+/* === 유저 메뉴 === */
+.user-menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.user-menu a {
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.user-menu a:hover { color: #000; }
+
+/* === 햄버거(모바일) === */
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+/* === 모바일 아코디언 === */
+.mobile-nav-menu {
+  background: #fff;
+  box-shadow: 0 4px 32px rgba(80,80,100,0.09);
+  border-radius: 0 0 18px 18px;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 100%;
+  z-index: 200;
+}
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 18px 12px 0;
+}
+.mobile-nav-item {
+  border-bottom: 1px solid #ececec;
+}
+.accordion-header {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  width: 100%;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accordion-menu-list {
+  list-style: none;
+  padding-left: 12px;
+  margin-bottom: 6px;
+}
+.accordion-menu-list li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  display: block;
+}
+
+/* === 드롭다운 전체 배경 ::before (필요!) === */
+.main-nav::before {
+  content: "";
+  position: absolute;
+  top: 120%; /* 드롭다운과 겹치게 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200vw;
+  height: 220px;
+  background-color: white;
+  border-bottom: 1px solid #dedede;
+  z-index: 10;
+  display: none;
+}
+.main-nav.all-open::before {
+  display: block;
+}
+
+/* === 다크 모드 === */
+.dark header { background-color: #222; }
+.dark .main-nav .nav-link { color: #ddd; }
+.dark .main-nav .nav-link:hover { color: #ff6565; }
+.dark .search-inner input { background: #333; color: #fff; }
+.dark .search-inner input::placeholder { color: #aaa; }
+
+/* === 반응형 === */
+@media (max-width: 991.98px) {
+  .main-nav-container, .main-nav { display: none !important; }
+  .mobile-nav-menu { display: block; }
+  .user-menu { justify-content: flex-end; }
+}
+
+@media (min-width: 992px) {
+  .mobile-nav-menu { display: none !important; }
+}

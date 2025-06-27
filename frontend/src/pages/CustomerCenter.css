@@ -1,0 +1,79 @@
+.container-xl,
+.container {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.customer-center-summary .summary-card {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.2rem 1.2rem 1.2rem 1.2rem;
+    border: 1.5px solid #eef0f3;
+    border-radius: 12px;
+    background: #fafbfc;
+    text-decoration: none;
+    transition: box-shadow 0.17s, border-color 0.17s;
+    min-height: 110px;
+}
+
+.customer-center-summary .summary-card:hover {
+    box-shadow: 0 3px 12px rgba(60, 110, 240, 0.07);
+    background: #f6faff;
+}
+
+.summary-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.summary-desc {
+    font-size: 0.98rem;
+    margin-top: 0.25rem;
+}
+
+.faq-search-box {
+    background: #f7f7f7;
+    border-radius: 2rem;
+    min-height: 80px;
+}
+
+.faq-search-box .form-control:focus {
+    border-color: black;
+    box-shadow: 0 0 0 0.1rem #1580f733;
+}
+
+.customer-search {
+    width: 898px !important;
+    height: 48px;
+    font-size: 1.05rem;
+}
+
+.faq-search-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 수직 중앙 (높이 필요하면 min-height: 350px 등) */
+    margin: 40px 0 56px 0;
+    align-items: center;
+}
+
+.faq-search-box {
+    background: #f7f7f7;
+    border-radius: 28px !important;
+    box-shadow: 0 4px 18px 0 rgba(30, 40, 80, 0.06);
+    min-width: 760px;
+    /* 박스 기본 너비 조정 */
+    width: 100%;
+    min-height: 110px;
+    padding: 2.5rem 2.8rem !important;
+}
+
+.faq-search-box input {
+    font-size: 1.13rem;
+    padding: 0.7rem 1.2rem;
+}

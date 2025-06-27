@@ -1,0 +1,27 @@
+.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sofa-grid {
+    margin-top: 2rem;
+}
+
+.card-title {
+    font-size: 0.8rem;
+}
+
+.card-img-top {
+    transition: 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .collab-store-page h2 {
+        font-size: 1.5rem;
+    }
+}

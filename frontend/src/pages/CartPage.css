@@ -1,0 +1,120 @@
+.cart-page {
+    min-height: 600px;
+    background: #f5f5f5;
+    /* 자코모몰 연그레이 */
+}
+
+.cart-box {
+    border-radius: 1.5rem;
+    background: #fff;
+    border: 1.5px solid #e6e7e9;
+}
+
+.cart-list {
+    margin-bottom: 0;
+}
+
+.cart-item {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(33, 82, 64, 0.04);
+    border: 1px solid #e6e7e9;
+    border-radius: 1.2rem;
+    transition: box-shadow .2s;
+}
+
+.cart-item.bg-light {
+    opacity: 0.60;
+    background: #f5f5f5 !important;
+}
+
+.cart-thumb {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+}
+
+.qty-btn {
+    border: 1px solid #215240;
+    border-radius: 6px;
+    background: #f5f5f5;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    color: #215240;
+    font-weight: bold;
+    transition: background 0.15s;
+}
+
+.qty-btn:disabled {
+    opacity: 0.4;
+    border-color: #ccc;
+}
+
+.cart-summary-box {
+    max-width: 420px;
+}
+
+.cart-summary-inner {
+    border-radius: 2rem;
+    box-shadow: 0 2px 16px rgba(33, 82, 64, 0.07);
+    background: #fff;
+    border: 2px solid #e6e7e9;
+}
+
+.btn-success,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:disabled {
+    background: #215240 !important;
+    border-color: #215240 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.btn-success:hover {
+    background: #2a5c44 !important;
+    border-color: #2a5c44 !important;
+}
+
+.btn-outline-danger {
+    border-color: #d94600;
+    color: #d94600;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    background: #fff3e6;
+    border-color: #d94600;
+    color: #d94600;
+}
+
+.badge.bg-secondary-subtle {
+    background: #f2c66d !important;
+    color: #215240 !important;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 0.38em 0.8em;
+}
+
+.fw-bold,
+.cart-summary-inner .display-6 {
+    color: #215240;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        padding: 14px !important;
+    }
+
+    .cart-thumb {
+        width: 62px;
+        height: 62px;
+    }
+
+    .cart-summary-box {
+        padding: 0 8px;
+    }
+}

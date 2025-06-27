@@ -1,0 +1,85 @@
+.home-container {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 1. 메인 배너 */
+.main-banner {
+    height: 300px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.banner-placeholder {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* 2. 카테고리 링크 버튼 */
+.category-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-links a {
+    flex: 1;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.category-links a:hover {
+    background: #e0e0e0;
+}
+
+/* 3, 4. 공통 섹션 */
+.home-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* 카드 공통 */
+.card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.card .user {
+    font-weight: bold;
+    color: #555;
+    margin: 0.5rem 0 0;
+}

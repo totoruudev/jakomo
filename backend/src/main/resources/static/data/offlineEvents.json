@@ -1,0 +1,42 @@
+{
+    "ongoing": [
+        {
+            "id": 1,
+            "title": "롯데몰 광명점 리퍼브 스토어 OPEN",
+            "subtitle": "오픈 기념 혜택 받아가세요",
+            "image": "/images/promo/offline_on_event_01.jpg"
+        },
+        {
+            "id": 2,
+            "title": "현장 구매 고객 혜택",
+            "subtitle": "오픈 기념 혜택 받아가세요",
+            "image": "/images/promo/offline_on_event_02.jpg"
+        },
+        {
+            "id": 3,
+            "title": "현장 구매 고객 혜택",
+            "subtitle": "직영플래그십 백화점 컬래버스토어",
+            "image": "/images/promo/offline_on_event_03.jpg"
+        }
+    ],
+    "ended": [
+        {
+            "id": 4,
+            "title": "신세계 대구점 팝업스토어 OPEN",
+            "subtitle": "오픈 기념 혜택 받아가세요",
+            "image": "/images/promo/offline_end_event_01.jpg"
+        },
+        {
+            "id": 5,
+            "title": "운정 호반 입주 박람회 특별 혜택",
+            "subtitle": "기간 내 최저가 보장, 선물 증정 이벤트",
+            "image": "/images/promo/offline_end_event_02.jpg"
+        },
+        {
+            "id": 6,
+            "title": "롯데백화점 부산본점 팝업스토어 OPEN",
+            "subtitle": "오픈 기념 혜택 받아가세요",
+            "image": "/images/promo/offline_end_event_03.jpg"
+        }
+    ]
+}

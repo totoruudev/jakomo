@@ -1,0 +1,36 @@
+{
+    "ongoing": [
+        {
+            "id": 1,
+            "title": "지금 설문 참여하세요!",
+            "image": "/images/promo/event_on_01.jpg"
+        },
+        {
+            "id": 2,
+            "title": "이달의 카드사",
+            "image": "/images/promo/event_on_02.jpg"
+        },
+        {
+            "id": 3,
+            "title": "현빈 월페이퍼",
+            "image": "/images/promo/event_on_03.jpg"
+        }
+    ],
+    "ended": [
+        {
+            "id": 4,
+            "title": "3월 오프라인 혜택",
+            "image": "/images/promo/event_end_01.jpg"
+        },
+        {
+            "id": 5,
+            "title": "롯데백화점 포항점 리뉴얼",
+            "image": "/images/promo/event_end_02.jpg"
+        },
+        {
+            "id": 6,
+            "title": "특별 할인 쿠폰을 신청해 보세요!",
+            "image": "/images/promo/event_end_03.jpg"
+        }
+    ]
+}

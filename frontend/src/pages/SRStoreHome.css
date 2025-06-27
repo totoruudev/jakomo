@@ -1,0 +1,57 @@
+.srstore-bg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.9s cubic-bezier(0.7, 0.2, 0.2, 1);
+    /* 부드럽게 */
+    overflow: hidden;
+}
+
+.srstore-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 23, 31, 0.38);
+    /* 약간 어둡게 */
+    z-index: 1;
+}
+
+.srstore-center {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.srstore-title {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+}
+
+.srstore-subtitle {
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.008em;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.srstore-enter-btn {
+    width: 242px;
+    height: 70px;
+    margin: 30px;
+    font-size: 1.5rem;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0 8px 28px rgba(60, 60, 90, 0.09);
+    transition: background 0.25s, color 0.25s;
+}
+
+.srstore-enter-btn:hover {
+    background: #222;
+    color: #ffe9a2;
+}

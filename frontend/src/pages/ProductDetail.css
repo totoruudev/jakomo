@@ -1,0 +1,56 @@
+/* src/pages/ProductDetail.css */
+
+.product-detail-page h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-detail-page img {
+    max-height: 500px;
+    object-fit: contain;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
+
+.product-detail-page .form-select,
+.product-detail-page select {
+    border-radius: 0.4rem;
+}
+
+.product-detail-tab {
+    width: 300px;
+    height: 70px;
+}
+
+.btn-light {
+    border: 1px solid black !important;
+}
+
+.product-detail-page .btn-outline-secondary {
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.product-detail-page .btn-outline-secondary:hover {
+    background-color: rgb(110, 144, 74);
+    color: #fff;
+}
+
+.product-detail-page section {
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.product-detail-tab {
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+/* 리뷰/문의 안내 */
+.product-detail-page .alert {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+}

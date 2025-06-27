@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "PERFECT SWING",
+        "subtitle" : "자코모 스윙 소파 컬렉션",
+        "image": "/images/promo/sales_01.jpg"
+    },
+    {
+        "id": 2,
+        "title": "단 하나뿐인 패브릭 소파",
+        "subtitle" : "다양한 소재의 패브릭 소파 추천",
+        "image": "/images/promo/sales_02.jpg"
+    },
+    {
+        "id": 3,
+        "title": "편안한 거실 속 미니멀라이프",
+        "subtitle" : "컴팩트한 사이즈 소파 추천",
+        "image": "/images/promo/sales_03.jpg"
+    },
+    {
+        "id": 4,
+        "title": "최적의 휴식 힐링 소파",
+        "subtitle" : "맞춤형 휴식을 위한 다양한 기능성 소파",
+        "image": "/images/promo/sales_04.jpg"
+    },
+    {
+        "id": 5,
+        "title": "공식몰 단독 소파 할인전",
+        "subtitle" : "오직 공식몰에서만 볼 수 있는 할인",
+        "image": "/images/promo/sales_05.jpg"
+    },
+    {
+        "id": 6,
+        "title": "슈퍼위크 특가",
+        "subtitle" : "매주 화요일 가디려지는 할인!",
+        "image": "/images/promo/sales_06.jpg"
+    },
+    {
+        "id": 7,
+        "title": "신상 소파 할인",
+        "subtitle" : "먼저 만나보는 신상 소파 할인 프로모션",
+        "image": "/images/promo/sales_07.jpg"
+    }
+]

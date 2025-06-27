@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "일상을 편안하게, 공식몰 신상 소파 ~17%",
+        "subtitle": "25.6.2 – 25.6.30",
+        "badge": "6월 기획전",
+        "image": "/images/promo/promobanner1.jpg",
+        "link": "/product/sofa123"
+    },
+    {
+        "id": 2,
+        "title": "공식몰의 모든 혜택을 한눈에!",
+        "subtitle": "프로모션 혜택 가이드",
+        "badge": "프로모션",
+        "image": "/images/promo/promobanner2.jpg",
+        "link": "/promotion/guide"
+    }
+]

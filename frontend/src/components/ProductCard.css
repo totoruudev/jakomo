@@ -1,0 +1,46 @@
+/* src/components/ProductCard.css */
+.product-card-link:hover .product-card {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.product-card-image {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.product-card-title {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #000;
+    color: #222;
+}
+
+.product-card-price {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #000;
+}
+
+@media (max-width: 576px) {
+    .product-card-title {
+        font-size: 0.95rem;
+    }
+
+    .product-card-price {
+        font-size: 0.85rem;
+    }
+
+    .product-card-image {
+        height: 180px;
+    }
+}

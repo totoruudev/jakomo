@@ -1,0 +1,109 @@
+/* === 카테고리 & 서브카테고리 버튼 === */
+.products-page .btn {
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.products-main-category button {
+    font-size: 1.2em;
+}
+
+.products-sub-category button {
+    font-size: 0.95em;
+    color: #707070;
+    background-color: rgb(226, 226, 226);
+}
+
+.products-page .btn:hover {
+    opacity: 0.9;
+}
+
+/* 공통 버튼 */
+.products-page .btn-animate {
+    position: relative;
+    overflow: hidden;
+    background-color: #0000000f;
+    border: none;
+
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* 배경 애니메이션 효과 */
+.products-page .btn-animate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(110, 144, 74);
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+/* Hover: 배경이 좌에서 우로 차오름 */
+.products-page .btn-animate:hover::before {
+    width: 100%;
+}
+
+/* Hover 시 글자색 변경 */
+.products-page .btn-animate:hover {
+    color: white;
+}
+
+/* Active 상태: 배경 고정 + 흰 글씨 */
+.products-page .btn-animate.active {
+    background-color: rgb(110, 144, 74);
+    color: white;
+}
+
+
+/* 버튼 간격 보정 */
+.products-page .btn.me-1 {
+    margin-right: 0.5rem;
+}
+
+.products-page .btn.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+/* === 페이지네이션 스타일 === */
+.products-page .pagination .page-item .page-link {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    padding: 6px 0;
+    text-align: center;
+    margin: 0 4px;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.products-page .pagination .page-item.active .page-link {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+/* === 반응형 조정 === */
+@media (max-width: 576px) {
+    .products-page .btn {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+
+    .products-page .pagination .page-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .products-page .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}

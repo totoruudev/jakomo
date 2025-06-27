@@ -1,0 +1,15 @@
+.support-box-wrapper {
+    max-width: 1000px;
+    font-size: 0.84rem;
+}
+
+.support-icon img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .support-box-wrapper .support-icon img {
+        width: 48px;
+    }
+}

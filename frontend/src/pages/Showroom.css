@@ -1,0 +1,74 @@
+.showroom-info {
+    margin-top: 48px;
+    margin-bottom: 60px;
+}
+
+.showroom-category-btns {
+    gap: 2.7rem;
+    margin-bottom: 56px;
+}
+
+.showroom-circle-btn {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    background: #fafbfe;
+    box-shadow: 0 2px 16px rgba(50, 70, 160, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.circle-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 3px #e3e8ff;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showroom-circle-btn:hover,
+.showroom-circle-btn:focus {
+    transform: scale(1.18);
+}
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.circle-img-label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.04rem;
+    font-weight: 600;
+    text-shadow: 0 1.5px 10px rgba(0,0,0,0.21);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.showroom-circle-btn:hover .circle-img,
+.showroom-circle-btn:focus .circle-img {
+    border: 2.5px solid #acacac;
+}
+
+.showroom-circle-btn .fw-semibold {
+    font-size: 1.05rem;
+    color: #5c5c5c;
+}

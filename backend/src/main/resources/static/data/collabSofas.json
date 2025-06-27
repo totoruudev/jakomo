@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "미로 3인 기능성 젠위브 패브릭 소파+쿠션 1개",
+        "image": "/images/collab/collab_01.jpg"
+    },
+    {
+        "id": 2,
+        "name": "미로 4인 슈렁큰 천연면피 소가죽 소파(전면가죽적용)+쿠션2개",
+        "image": "/images/collab/collab_02.jpg"
+    },
+    {
+        "id": 3,
+        "name": "디모레 4인 코너형 기능성 비텔로 통가죽 슈렁큰 천연면피 소가죽 소파(전측면가죽적용)+쿠션2개",
+        "image": "/images/collab/collab_03.jpg"
+    },
+    {
+        "id": 4,
+        "name": "데네브 4인 기능성 비텔로 통가죽 슈렁큰 천연면피 소가죽 소파(전면가죽적용)",
+        "image": "/images/collab/collab_04.jpg"
+    },
+    {
+        "id": 5,
+        "name": "벨머 4인 코너카우치형 기능성 젠위브 패브릭 소파+쿠션3개",
+        "image": "/images/collab/collab_05.jpg"
+    },
+    {
+        "id": 6,
+        "name": "라메르 4인 기능성 젠위브 패브릭 소파+쿠션2개",
+        "image": "/images/collab/collab_06.jpg"
+    },
+    {
+        "id": 7,
+        "name": "세라 4인 기능성 젠위브 패브릭 소파+쿠션3개",
+        "image": "/images/collab/collab_07.jpg"
+    },
+    {
+        "id": 8,
+        "name": "폰다 4인 카우치형 기능성 비텔로 통가죽 슈렁큰 천연면피 소가죽 소파(전면가죽적용)",
+        "image": "/images/collab/collab_08.jpg"
+    },
+    {
+        "id": 9,
+        "name": "제니스 4인 카우치형 기능성 비텔로 통가죽 슈렁큰 천연면피 소가죽 소파(전면가죽적용)",
+        "image": "/images/collab/collab_09.jpg"
+    }
+]

@@ -1,0 +1,254 @@
+.notice-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.notice-title {
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+}
+
+.notice-title-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.notice-list-row:hover .notice-col-title {
+    font-weight: 700;
+    transition: background 0.2s, font-weight 0.2s;
+}
+
+.notice-col-title .notice-title-link {
+    display: block;
+}
+
+/* 리스트 헤더/행 공통 flex 설정 */
+.notice-list-header,
+.notice-list-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* 컬럼 공통 */
+.notice-list-col {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 4px;
+}
+
+/* 데스크탑 기본 컬럼 비율 */
+.notice-col-num {
+    flex: 0 0 50px;
+    min-width: 40px;
+}
+
+.notice-col-title {
+    flex: 2 1 0;
+    min-width: 120px;
+    text-align: center;
+}
+
+.notice-col-date {
+    flex: 1 1 0;
+    min-width: 60px;
+}
+
+.notice-col-writer {
+    flex: 0.8 1 0;
+    min-width: 60px;
+}
+
+.notice-col-views {
+    flex: 0.4 1 0;
+    min-width: 40px;
+}
+
+.notice-list-header {
+    font-weight: 700;
+    background: #f6f7fa;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid #e5e7eb;
+    padding: 13px 10px;
+    margin-bottom: 0;
+}
+
+.notice-list-body {
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    border-bottom: 1.5px solid #ececec;
+}
+
+.notice-list-row {
+    padding: 14px 10px;
+    font-size: 1.02rem;
+    border-bottom: 1px solid #f1f1f1;
+    background: #fff;
+    transition: background 0.13s;
+}
+
+.notice-list-row:last-child {
+    border-bottom: none;
+}
+
+.notice-list-empty {
+    text-align: center;
+    color: #bbb;
+    padding: 2.5em 0;
+    font-size: 1.02rem;
+}
+
+.notice-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 8px;
+}
+
+.page-btn,
+.page-nav-btn {
+    border: none;
+    background: none;
+    color: #222;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.page-btn.active {
+    background: #b39c15;
+    color: #fff;
+    font-weight: bold;
+}
+
+.page-btn:hover:not(.active),
+.page-nav-btn:hover:enabled {
+    background: #f6f6f6;
+}
+
+.page-nav-btn[disabled] {
+    color: #bbb;
+    cursor: not-allowed;
+    background: none;
+    border: none;
+}
+
+.page-nav-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 7px 12px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+
+/* ===== 태블릿 (900px 이하) ===== */
+@media (max-width: 900px) {
+    .notice-page {
+        max-width: 100%;
+        padding: 0 6px;
+    }
+
+    .notice-title {
+        font-size: 1.6rem;
+    }
+
+    .notice-list-header,
+    .notice-list-row {
+        gap: 7px;
+        font-size: 0.97rem;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .notice-list-col {
+        font-size: 0.97rem;
+    }
+
+    .notice-col-title {
+        min-width: 80px;
+    }
+
+    .notice-col-date,
+    .notice-col-writer,
+    .notice-col-views {
+        min-width: 42px;
+    }
+}
+
+/* ===== 모바일 (600px 이하) ===== */
+@media (max-width: 600px) {
+    .notice-page {
+        padding: 0 2px;
+    }
+
+    .notice-title {
+        font-size: 1.1rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .notice-list-header,
+    .notice-list-row {
+        flex-wrap: nowrap;
+        gap: 24px;
+        font-size: 0.92rem;
+        padding: 7px 1px;
+    }
+
+    .notice-list-col {
+        font-size: 0.91rem;
+        padding: 0 1px;
+    }
+
+    .notice-col-num {
+        flex-basis: 32px;
+        min-width: 24px;
+        font-size: 0.9rem;
+    }
+
+    .notice-col-title {
+        flex-basis: 100%;
+        min-width: 0;
+        text-align: center;
+        order: unset;
+        font-size: 1rem;
+        padding-bottom: 3px;
+        overflow: visible;
+    }
+
+    .notice-col-date {
+        flex: 0 0 95px;
+        /* 날짜 고정폭 or flex:0.2 */
+        min-width: 60px;
+        text-align: center;
+        font-size: 0.85rem;
+        margin-right: 20px;
+    }
+
+    .notice-col-date,
+    .notice-col-writer,
+    .notice-col-views {
+        min-width: 28px;
+        font-size: 0.85rem;
+    }
+
+    /* 아주 작은 화면에서는 조회수/작성자 숨김 */
+    .notice-col-num,
+    .notice-col-views,
+    .notice-col-writer {
+        display: none;
+    }
+}

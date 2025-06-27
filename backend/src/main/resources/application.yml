@@ -1,0 +1,46 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: jakomo
+  datasource:
+    url: jdbc:mysql://192.168.105.100:3306/team24?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: team24
+    password: team24pw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  servlet:
+    multipart:           
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 30MB
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-3.5-turbo
+          temperature: 0.7
+          top-p: 0.9
+          max-tokens: 1000
+          presence-penalty: 0.6
+          frequency-penalty: 0.0
+
+upload:
+  path: src/main/resources/static/upload
+
+kakaopay:
+  admin-key: ${ KAKAOPAY_ADMIN_KEY }
+  cid: "TC0ONETIME"   # ??? CID
+  approval-url: "http://localhost:8084/api/payment/success"
+  cancel-url: "http://localhost:8084/api/payment/cancel"
+  fail-url: "http://localhost:8084/api/payment/fail"
+
+jwt:
+  secret: abcdefghijklmnoqwertyuiopzxcvbnmasdf1234567890

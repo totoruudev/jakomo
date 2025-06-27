@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "아르노 소파 대만족",
+        "content": "편하고 예뻐요.",
+        "author": "chan****",
+        "date": "2025-06-21",
+        "views": 124,
+        "likes": 17,
+        "comments": 3,
+        "image": "/images/sample-review1.jpg",
+        "isBest": true
+    },
+    {
+        "id": 2,
+        "title": "배송도 빨라서 좋았어요",
+        "content": "컬러 고민했는데 실물이 더 예쁩니다.",
+        "author": "best****",
+        "date": "2025-06-17",
+        "views": 87,
+        "likes": 7,
+        "comments": 1,
+        "image": "/images/sample-review2.jpg",
+        "isBest": false
+    }
+]

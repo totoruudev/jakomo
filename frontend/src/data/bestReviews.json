@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "소파 너무 만족해요!",
+        "content": "배송도 빠르고 색상도 예뻐요. 거실 분위기가 달라졌어요.",
+        "author": "happ****",
+        "date": "2025-06-17",
+        "rating": 5,
+        "image": "/images/sample-review1.jpg",
+        "isBest": true
+    },
+    {
+        "id": 2,
+        "title": "편안하고 좋아요",
+        "content": "착석감이 진짜 푹신합니다. 적극 추천!",
+        "author": "best****",
+        "date": "2025-06-15",
+        "rating": 4,
+        "image": "/images/sample-review2.jpg",
+        "isBest": false
+    }
+]

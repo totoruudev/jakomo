@@ -1,0 +1,46 @@
+/* 공통 배너 스타일 */
+.promo-banner-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+/* 왼쪽 배너 - 더 넓고 낮음 */
+.promo-banner-wrapper.large {
+    height: 380px;
+    /* 원하는 고정 높이 */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* 오른쪽 배너 - 정사각형 또는 높이 더 짧음 */
+.promo-banner-wrapper.small {
+    height: 380px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.promo-banner-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-subtitle{
+    font-size: 0.75rem;
+}
+
+.grayscale-card img {
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+    .promo-banner-wrapper.large,
+    .promo-banner-wrapper.small {
+        height: auto;
+        aspect-ratio: 1.6 / 1;
+    }
+}

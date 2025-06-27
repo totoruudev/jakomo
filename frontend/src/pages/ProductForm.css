@@ -1,0 +1,43 @@
+/* src/pages/ProductForm.css */
+
+.product-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.product-form .form-label {
+    font-weight: 600;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form select,
+.product-form input[type="file"] {
+    border-radius: 0.5rem;
+}
+
+.product-form button[type="submit"] {
+    width: 100%;
+}
+
+.product-form .btn-outline-secondary {
+    border-radius: 1.5rem;
+}
+
+.product-form .btn-success {
+    border-radius: 1.5rem;
+}
+
+/* 반응형 */
+@media (max-width: 576px) {
+    .product-form {
+        padding: 1rem;
+    }
+
+    .product-form button {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.75rem;
+    }
+}

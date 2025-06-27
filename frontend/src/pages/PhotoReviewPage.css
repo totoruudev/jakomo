@@ -1,0 +1,16 @@
+.review-thumb-card .img-wrap {
+    overflow: hidden;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background: #f7f7f7;
+}
+
+.review-thumb-card:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.review-tab-nav .nav-link.active,
+.review-tab-nav .nav-link:focus {
+    color: #fff !important;
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+}
